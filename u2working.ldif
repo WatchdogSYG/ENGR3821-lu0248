@@ -1,0 +1,477 @@
+dn: dc=nodomain
+objectClass: top
+objectClass: organization
+objectClass: DcObject
+o: nodomain
+dc: nodomain
+
+dn: dc=Integrated Replicas,dc=nodomain
+dc: Integrated Replicas
+objectClass: dcObject
+objectClass: organization
+o: Integrated Replicas.
+
+dn: dc=Explosive Investments,dc=nodomain
+dc: Explosive Investments
+objectClass: dcObject
+objectClass: organization
+o: Explosive Investments.
+
+dn: dc=Monopolistic Imports,dc=nodomain
+dc: Monopolistic Imports
+objectClass: dcObject
+objectClass: organization
+o: Monopolistic Imports.
+
+dn: dc=Trans-Urannic Embezzlers,dc=nodomain
+dc: Trans-Urannic Embezzlers
+objectClass: dcObject
+objectClass: organization
+o: Trans-Urannic Embezzlers.
+
+dn: dc=Universal Replicas,dc=nodomain
+dc: Universal Replicas
+objectClass: dcObject
+objectClass: organization
+o: Universal Replicas.
+
+dn: ou=Truth,dc=Integrated Replicas,dc=nodomain
+objectClass: organizationalUnit
+ou: Truth
+
+dn: ou=Accounting,ou=Truth,dc=Integrated Replicas,dc=nodomain
+objectClass: organizationalUnit
+ou: Accounting
+
+dn: ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+objectClass: organizationalUnit
+ou: Statistical misinterpretation
+
+dn: ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+objectClass: organizationalUnit
+ou: Production
+
+dn: ou=Sub-divisions,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+objectClass: organizationalUnit
+ou: Sub-divisions
+
+dn: ou=Finance,dc=Monopolistic Imports,dc=nodomain
+objectClass: organizationalUnit
+ou: Finance
+
+dn: ou=Consolidation,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+objectClass: organizationalUnit
+ou: Consolidation
+
+dn: ou=Research,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+objectClass: organizationalUnit
+ou: Research
+
+dn: ou=Pest Control,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+objectClass: organizationalUnit
+ou: Pest Control
+
+dn: ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+objectClass: organizationalUnit
+ou: Marketing
+
+dn: ou=Embezzelment,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+objectClass: organizationalUnit
+ou: Embezzelment
+
+dn: ou=Interplanetary exploration,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+objectClass: organizationalUnit
+ou: Interplanetary exploration
+
+dn: ou=Truth,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+objectClass: organizationalUnit
+ou: Truth
+
+dn: ou=Finance,dc=Universal Replicas,dc=nodomain
+objectClass: organizationalUnit
+ou: Finance
+
+dn: ou=Sub-divisions,ou=Finance,dc=Universal Replicas,dc=nodomain
+objectClass: organizationalUnit
+ou: Sub-divisions
+
+dn: ou=Embezzelment,ou=Finance,dc=Universal Replicas,dc=nodomain
+objectClass: organizationalUnit
+ou: Embezzelment
+
+dn: ou=Manufacture,ou=Finance,dc=Universal Replicas,dc=nodomain
+objectClass: organizationalUnit
+ou: Manufacture
+
+dn: cn=Frances James,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+cn: Frances James
+sn: James
+mail: frances.james@explosiveinvestments.com.au
+telephoneNumber: +61730519777
+telephoneNumber: +61730519099
+
+dn: cn=Martin Thomas,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+cn: Martin Thomas
+sn: Thomas
+mail:martin.thomas@explosiveinvestments.com.au
+manager: cn=Frances James,ou=Statistical misinterpretation
+
+dn: cn=Fifi Thomas,ou=Manufacture,ou=Finance,dc=Universal Replicas,dc=nodomain
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+cn: Fifi Thomas
+sn: Thomas
+mail: fifi.thomas@transurannicembezzlers.com.au
++61339054805
+
+dn: cn=Morgan Wright,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+cn: Morgan Wright
+sn: Wright
+mw3@explosivein-
+vestments.com
+.au
++61730519593
++61730519278
++61730519197
+
+dn: cn=Fran James,ou=Embezzelment,ou=Finance,dc=Universal Replicas,dc=nodomain
+cn: Fran James
+sn: James
+mail: fj4@integratedreplicas.com.nz
+manager: cn=Fifi Thomas,ou=Manufacture,ou=Finance
+
+dn: cn=Mario Jackson,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+cn: Mario Jackson
+sn: Jackson
+mario.jackson@mo-
+nopolisticimports
+.com.au
++61806110693
+manager: cn=Frances James,ou=Statistical misinterpretation
+
+dn: cn=Frances Davies,ou=Research,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn: Frances Davies
+sn: Davies
+fd6@universalrepli-
+cas.com.nz
++6514653985
++6514653957
++6514653354
++6514653761
+
+dn: cn=Fran Green,ou=Truth,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+cn: Fran Green
+sn: Green
+fgreen@monopo-
+listicimports.com
+.au
+manager: cn=Morgan Wright,ou=Marketing
+
+dn: cn=Magnus Jackson,ou=Pest control,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn: Magnus Jackson
+sn: Jackson
+magnus6j7@mo-
+nopolisticimports
+.com.au
++61806110015
++61806110506
++61806110851
+manager: cn=Frances Davies,ou=Research,ou=Finance
+
+dn: cn=Fiona Williams,ou=Finance,dc=Universal Replicas,dc=nodomain
+cn Fiona Williams
+sn Williams
+fiona5w8@univer-
+salreplicas.com
+.nz
++6514653537
++6514653859
+manager: cn=Fifi Thomas,ou=Manufacture,ou=Finance
+
+dn: cn=Flora Williams,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Flora Thomas
+sn Thomas
+flora.williams
+@transurannicem-
+bezzlers.com.au
+manager: cn=Frances Davies,ou=Research,ou=Finance
+
+dn: cn=Fiona Taylor,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Fiona Taylor
+sn Taylor
+fiona.taylor@ex-
+plosiveinvestments
+.com.au
++61730519517
++61730519361
++61730519083
++61730519351
+manager: cn=Magnus Jackson,ou=Pest control,ou=Finance
+
+dn: cn=Mark Davies,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+cn Mark Davies
+sn Davies
+md12@monopo-
+listicimports.com
+.au
++61806110489
++61806110032
++61806110154
++61806110104
+manager: cn=Frances James,ou=Production,ou=Statistical misinterpretation
+
+dn: cn=Frances King,ou=Consolidation,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Frances King
+sn King
+fking@integrat-
+edreplicas.com
+.nz
++6558050636
++6558050170
++6558050956
++6558050844
+manager: cn=Flora Williams,ou=Finance
+
+dn: cn=Murphey Green,ou=Sub-divisions,ou=Finance,dc=Universal Replicas,dc=nodomain
+cn Murphey Green
+sn Green
+mg14@integrat-
+edreplicas.com
+.nz
++6558050886
+manager: cn=Fifi Thomas,ou=Manufacture,ou=Finance
+
+dn: cn=Frances Harris,ou=Manufacture,ou=Finance,dc=Universal Replicas,dc=nodomain
+cn Frances Harris
+sn Harris
+fharris@transuran-
+nicembezzlers.com
+.au
++61339054393
+manager: cn=Fifi Thomas,ou=Manufacture,ou=Finance
+
+dn: cn=Murphey Smith,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Murphey Smith
+sn Smith
+msmith@integrat-
+edreplicas.com
+.nz
++6558050735
++6558050548
++6558050295
++6558050877
+manager: cn=Fiona Taylor,ou=Finance
+
+dn: cn=Fleur Martin,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Fleur
+sn Martin
+fm17@transuran-
+nicembezzlers.com
+.au
+manager: cn=Murphey Smith,ou=Finance
+
+dn: cn=Morgan Lewis,ou=Research,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Morgan Lewis
+sn Lewis
+morgan.lewis
+@transurannicem-
+bezzlers.com.au
++61339054286
++61339054171
++61339054358
+manager: cn=Fiona Taylor,ou=Finance
+
+dn: cn=Mark Williams,ou=Consolidation,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Mark Williams
+sn Williams
+mwilliams@monop-
+olisticimports.com
+.au
+manager: cn=Magnus Jackson,ou=Pest control,ou=Finance
+
+dn: cn=Fiona Johnson,ou=Research,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Fiona Johnson
+sn Johnson
+fiona.johnson
+@transurannicem-
+bezzlers.com.au
++61339054042
++61339054624
++61339054659
++61339054919
+manager: cn=Fleur Martin,ou=Finance
+
+dn: cn=Mitchell Thomas,ou=Sub-divisions,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+cn Mitchell Thomas
+sn Thomas
+mthomas@univer-
+salreplicas.com
+.nz
++6514653383
+manager: cn=Mark Davies,ou=Production,ou=Statistical misinterpretation
+
+dn: cn=Fleur Lee,ou=Interplanetary exploration,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+cn Fleur Lee
+sn Lee
+fleur5l3@univer-
+salreplicas.com
+.nz
++6514653475
+manager: cn=Morgan Wright,ou=Marketing
+
+dn: cn=Flora Thomas,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+cn Flora Thomas
+sn Thomas
+flora5t6@explo-
+siveinvestments
+.com.au
++61730519902
++61730519868
++61730519131
++61730519002
+manager: cn=Mario Jackson,ou=Production,ou=Statistical misinterpretation
+
+dn: cn=Micah Smith,ou=Embezzelment,ou=Finance,dc=Universal Replicas,dc=nodomain
+cn Micah Smith
+sn Smith
+ms24@universal-
+replicas.com.nz
++6514653487
++6514653472
+
+
+
+dn: cn=Fay Lewis,ou=Pest control,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Fay Lewis
+sn Lewis
+fl25@transuran-
+nicembezzlers.com
+.au
++61339054496
++61339054418
+
+
+
+dn: cn=Fleur Williams,ou=Interplanetary exploration,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+cn Fleur Williams
+sn Williams
+fw26@explosivein-
+vestments.com
+.au
++61730519485
++61730519948
++61730519305
+
+
+
+dn: cn=Murphey Robinson,ou=Marketing,dc=Trans-Urannic Embezzlers,dc=nodomain
+cn Murphey Robinson
+sn Robinson
+murphey7r8@inte-
+gratedreplicas.com
+.nz
++6558050424
++6558050719
+
+
+
+dn: cn=Matthew Cooper,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Matthew Cooper
+sn Cooper
+mc28@integrat-
+edreplicas.com
+.nz
++6558050583
+
+
+
+dn: cn=Mark King,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Mark King
+sn King
+mark.king@uni-
+versalreplicas.com
+.nz
++6514653493
++6514653431
+
+
+
+dn: cn=Mark Wright,ou=Finance,dc=Monopolistic Imports,dc=nodomain
+cn Mark Wright
+sn Wright
+mwright@inte-
+gratedreplicas.com
+.nz
++6558050638
+
+
+
+dn: cn=Matthew Lewis,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
+cn Matthew Lewis
+sn Lewis
+matthew7l5@inte-
+gratedreplicas.com
+.nz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dn: cn=Morgan Brown,ou=Accounting,ou=Truth,dc=Integrated Replicas,dc=nodomain
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+cn: Morgan Brown
+sn: Brown
+mail: mbrown@explosiveinvestments.com.au

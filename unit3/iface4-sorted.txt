@@ -1,0 +1,15 @@
+
+
+
+
+
+	address 72.104.59.163/15
+	hwaddress 95:C2:37:67:44:58
+	hwaddress BD:4F:D2:1E:F7:22
+iface 72.104.59.163 inet static
+iface castle1 inet
+iface eth1 inet inherits castle1
+iface moths0 inet
+iface wlan0 inet
+	mtu 293
+	mtu 7440

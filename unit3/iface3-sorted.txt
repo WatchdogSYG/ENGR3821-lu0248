@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+	address 100.83.204.174/16
+	address 113.168.210.44/23
+	address 117.210.69.178/18
+	address 126.155.244.195/3
+	address 23.39.71.79/10
+	address 30.126.38.214/1
+	hwaddress D4:0E:44:9A:6E:FC
+	hwaddress E9:BF:E1:EA:C4:86
+iface 100.83.204.174 inet static
+iface 113.168.210.44 inet static
+iface 117.210.69.178 inet static
+iface 126.155.244.195 inet static inherits moths1
+iface 23.39.71.79 inet static
+iface 30.126.38.214 inet static inherits moths1
+iface castle0 inet
+iface moths1 inet
+iface wlan3 inet inherits castle0
+	mtu 5050
+	mtu 6741

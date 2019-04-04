@@ -1,0 +1,15 @@
+
+
+
+
+
+	address 100.58.87.230/4
+	hwaddress 3E:79:E8:00:5E:52
+	hwaddress DF:20:66:7D:4D:E4
+iface 100.58.87.230 inet static inherits ruins1
+iface ftdi1 inet inherits ruins1
+iface ftdi2 inet
+iface moths0 inet
+iface ruins1 inet
+	mtu 5207
+	mtu 718

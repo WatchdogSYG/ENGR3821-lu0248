@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+	address 47.41.138.74/24
+	address 83.133.145.1/5
+	hwaddress 82:35:8C:AE:14:AC
+	hwaddress F9:F8:EA:DF:9D:7D
+iface 47.41.138.74 inet static
+iface 83.133.145.1 inet static
+iface castle0 inet
+iface eth0 inet
+iface ftdi2 inet
+iface ftdi5 inet inherits wealth1
+iface wealth1 inet
+iface wlan3 inet
+iface wlan6 inet inherits wealth1
+	mtu 1702
+	mtu 2922

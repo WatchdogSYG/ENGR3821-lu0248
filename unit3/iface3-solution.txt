@@ -1,0 +1,28 @@
+iface castle0 inet
+	mtu 5050
+	hwaddress D4:0E:44:9A:6E:FC
+
+iface moths1 inet
+	mtu 6741
+	hwaddress E9:BF:E1:EA:C4:86
+
+iface 126.155.244.195 inet static inherits moths1
+	address 126.155.244.195/3
+
+iface 30.126.38.214 inet static inherits moths1
+	address 30.126.38.214/1
+
+iface 117.210.69.178 inet static
+	address 117.210.69.178/18
+
+iface wlan3 inet inherits castle0
+
+iface 23.39.71.79 inet static
+	address 23.39.71.79/10
+
+iface 113.168.210.44 inet static
+	address 113.168.210.44/23
+
+iface 100.83.204.174 inet static
+	address 100.83.204.174/16
+

@@ -1,0 +1,20 @@
+iface moths0 inet
+	mtu 6100
+	hwaddress 08:32:B4:99:E2:34
+
+iface moths1 inet
+	mtu 2310
+	hwaddress E0:57:69:10:95:96
+
+iface castle2 inet
+	mtu 5058
+	hwaddress E5:6A:85:CD:8D:9B
+
+iface 75.133.130.158 inet static inherits moths0
+	address 75.133.130.158/12
+
+iface eth1 inet inherits moths0
+
+iface 120.124.224.79 inet static
+	address 120.124.224.79/25
+

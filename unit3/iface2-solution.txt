@@ -1,0 +1,24 @@
+iface castle0 inet
+	mtu 2922
+	hwaddress 82:35:8C:AE:14:AC
+
+iface wealth1 inet
+	mtu 1702
+	hwaddress F9:F8:EA:DF:9D:7D
+
+iface eth0 inet
+
+iface 47.41.138.74 inet static
+	address 47.41.138.74/24
+
+iface ftdi2 inet
+
+iface wlan3 inet
+
+iface 83.133.145.1 inet static
+	address 83.133.145.1/5
+
+iface ftdi5 inet inherits wealth1
+
+iface wlan6 inet inherits wealth1
+

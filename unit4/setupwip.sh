@@ -9,7 +9,9 @@ echo "--------Installing git and cloning"
 #install git and then clone into a new working directory
 sudo apt-get -y install git
 git clone https://github.com/MEGA65/mega65-core.git
+cd mega65-core
 git checkout development
+cd ..
 
 echo "--------Installing dependencies"
 #install dependencies
@@ -18,11 +20,13 @@ sudo apt install make
 echo "--------gcc"
 sudo apt-get -y install gcc
 
-echo "--------fpgajtag"
-#fpgajtag
 #libs required for compilation of fpgajtag and zlib
 sudo apt-get install -y libusb-1.0-0-dev
-cd ..
+
+#a temporary file for dumping all dependency install files
+mkdir mega-65-temp
+cd mega-65-temp
+echo "--------fpgajtag"
 #TO CLEANUP
 git clone https://github.com/cambridgehackers/fpgajtag.git
 cd fpgajtag/src
@@ -34,7 +38,6 @@ cd ..
 make
 sudo cp src/fpgajtag /usr/local/bin
 cd ..
-cd mega65-core
 echo "--------DONE fpgajtag"
 
 #python 2.7.10
@@ -51,5 +54,14 @@ sudo tar xzf Python-2.7.10.tgz
 cd Python-2.7.10
 sudo ./configure
 sudo make altinstall
-cd $PWD
+cd $PWD/mega-65-temp
 
+echo "--------libpng-dev"
+sudo apt-get install -y libpng-dev
+
+echo "--------cbmconvert 2.1.2"
+git clone https://github.com/sasq64/cbmconvert
+make -f Makefile.unix
+sudo make install
+
+echo "--------PLEASE INSTALL A RECENT VERSION OF XILINX VIVADO ISE"

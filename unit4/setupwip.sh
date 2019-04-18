@@ -47,15 +47,6 @@ echo "--------build-essential checkinstall"
 sudo apt-get -y install build-essential checkinstall
 echo "--------libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev"
 sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-echo "--------Python 2.7.10"
-cd /usr/src
-sudo wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
-sudo tar xzf Python-2.7.10.tgz
-cd Python-2.7.10
-sudo ./configure
-sudo make altinstall
-cd $PWD/mega-65-temp
-
 echo "--------libpng-dev"
 sudo apt-get install -y libpng-dev
 
@@ -64,4 +55,17 @@ git clone https://github.com/sasq64/cbmconvert
 make -f Makefile.unix
 sudo make install
 
+echo "--------Python 2.7.10"
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
+sudo tar xzf Python-2.7.10.tgz
+cd Python-2.7.10
+sudo ./configure
+sudo make altinstall
+cd $PWD/mega-65-temp
+echo "--------DONE Python2.7.10"
+
 echo "--------PLEASE INSTALL A RECENT VERSION OF XILINX VIVADO ISE"
+#https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
+#Full Installer for Linux (TAR/GZIP - 6.09 GB) 
+#MD5 SUM Value : e8065b2ffb411bb74ae32efa475f9817

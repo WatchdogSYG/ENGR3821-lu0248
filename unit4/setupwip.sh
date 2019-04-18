@@ -16,7 +16,7 @@ cd ..
 echo "--------Installing dependencies"
 #install dependencies
 echo "--------make"
-sudo apt install make
+sudo apt install -y make
 echo "--------gcc"
 sudo apt-get -y install gcc
 
@@ -47,11 +47,13 @@ echo "--------build-essential checkinstall"
 sudo apt-get -y install build-essential checkinstall
 echo "--------libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev"
 sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
 echo "--------libpng-dev"
 sudo apt-get install -y libpng-dev
 
 echo "--------cbmconvert 2.1.2"
 git clone https://github.com/sasq64/cbmconvert
+cd cbmconvert
 make -f Makefile.unix
 sudo make install
 

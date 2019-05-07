@@ -42,20 +42,20 @@ objectClass: organization
 o: Universal Replicas.
 
 dn: ou=Truth,dc=Integrated Replicas,dc=nodomain
-objectClass: organizationalUnit
 ou: Truth
+objectClass: organizationalUnit
 
 dn: ou=Accounting,ou=Truth,dc=Integrated Replicas,dc=nodomain
-objectClass: organizationalUnit
 ou: Accounting
+objectClass: organizationalUnit
 
 dn: ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
 ou: Statistical misinterpretation
 objectClass: organizationalUnit
 
 dn: ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
-objectClass: organizationalUnit
 ou: Production
+objectClass: organizationalUnit
 
 dn: ou=Sub-divisions,ou=Production,ou=Statistical misinterpretation,dc=Explosive Investments,dc=nodomain
 ou: Sub-divisions

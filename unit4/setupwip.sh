@@ -3,6 +3,7 @@
 #(AMD64 version) virtualised on an Oracle Virtualbox VM
 #Version 6.0.4 r128413
 
+sudo apt-get -y update
 echo "--------Installing mega65-core onto a clean Ubuntu 18.04--------"
 echo "--------$PWD"
 echo "--------Installing git and cloning"
@@ -13,7 +14,7 @@ cd mega65-core
 git checkout development
 cd ..
 
-echo "--------Installing dependencies"
+echo "--------Installing mega65 direct dependencies"
 #install dependencies
 echo "--------make"
 sudo apt install -y make
@@ -42,7 +43,6 @@ echo "--------DONE fpgajtag"
 
 #python 2.7.10
 #instructions: https://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
-sudo apt-get -y update
 echo "--------build-essential checkinstall"
 sudo apt-get -y install build-essential checkinstall
 echo "--------libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev"
@@ -57,6 +57,12 @@ cd cbmconvert
 make -f Makefile.unix
 sudo make install
 
+echo "--------iverilog dependencies"
+sudo apt-get install -y bison
+sudo apt-get install -y flex
+sudo apt-get install -y gperf
+sudo apt-get install -y autoconf
+
 echo "--------Python 2.7.10"
 cd /usr/src
 sudo wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
@@ -64,10 +70,15 @@ sudo tar xzf Python-2.7.10.tgz
 cd Python-2.7.10
 sudo ./configure
 sudo make altinstall
+sudo apt-get install -y python-minimal
 cd $PWD/mega-65-temp
+
 echo "--------DONE Python2.7.10"
 
-echo "--------PLEASE INSTALL A RECENT VERSION OF XILINX VIVADO ISE"
+
+
+
+
 #https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
 #Full Installer for Linux (TAR/GZIP - 6.09 GB) 
 #MD5 SUM Value : e8065b2ffb411bb74ae32efa475f9817

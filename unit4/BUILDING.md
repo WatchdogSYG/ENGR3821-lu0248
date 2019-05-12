@@ -60,6 +60,7 @@ The direct dependencies of the mega65-core according to the documentation found 
 3. make
 4. cbmconvert
 5. python (2.7.10)
+6. ICARUS Verilog
 
 
 The next steps will guide you through the installation of the dependencies and their sub-dependencies:
@@ -131,9 +132,26 @@ Upon calling make on mega65, an error may occur where the installation path of p
 
     sudo apt-get install -y python-minimal
 
+#####6. ICARUS Verilog
+
+ICARUS Verilog (iverilog) requires the following packages obtainable through apt-get:
+
+    sudo apt-get install -y bison
+    sudo apt-get install -y flex
+    sudo apt-get install -y gperf
+    sudo apt-get install -y autoconf
 
 ###3. Making MEGA65
 
+Calling make in the mega65-core directory will require the following packages to be installed:
+
+1. bison
+2. flex
+3. gperf
+4. autoconf
+2. 
+3. 
+4. 
 
 # headers
 

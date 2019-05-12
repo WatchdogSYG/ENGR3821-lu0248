@@ -58,10 +58,7 @@ make -f Makefile.unix
 sudo make install
 
 echo "--------iverilog dependencies"
-sudo apt-get install -y bison
-sudo apt-get install -y flex
-sudo apt-get install -y gperf
-sudo apt-get install -y autoconf
+
 
 echo "--------Python 2.7.10"
 cd /usr/src
@@ -75,7 +72,18 @@ cd $PWD/mega-65-temp
 
 echo "--------DONE Python2.7.10"
 
+#GNAT for GHDL
+sudo apt-get install -y gnat
 
+#swapExtend
+sudo swapoff -a
+sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+sudo mkswap /swapfile
+sudo swapon /swapfile
+free -h
+sudo swapon --show
+sudo cp /etc/fstab /etc/fstab.bak
+echo '/swapfile swap default 0 0' | tee -a /etc/fstab
 
 
 

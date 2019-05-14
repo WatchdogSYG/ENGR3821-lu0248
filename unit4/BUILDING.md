@@ -1,6 +1,6 @@
-# ENGR3812 Network Engineering Unit4 - lu0248 2167078
-#### MEGA65 Target Compilation form Clean Ubuntu 18.04 VM
-
+#ENGR3812 Network Engineering Unit4 - lu0248 2167078
+####MEGA65 Target Compilation form Clean Ubuntu 18.04 VM
+Revision0: Brandon Lu 2019-05-14
 
 ## Package Dependencies
 * Xilinx Vivado 2018.3 - shell script does not check for valid Vivado installations
@@ -28,8 +28,8 @@
 * autoconf
 * Python 2.7.10
 
-## Installation Procedure
-### 0. Preliminaries
+##Installation Procedure
+###0. Preliminaries
 Use a clean install of a Linux Ubuntu 18.04 VM using Oracle VirtualBox VM Manager.
 
 You may have to update the apt database before this process. Use the -y option to skip operator input:
@@ -43,7 +43,7 @@ A gcc compiler and the make capability are required to compile most future packa
     sudo apt-get -y install gcc
     
 
-### 1. Install git
+###1. Install git
 Install git and then clone and checkout the development branch of the mega65 repo:
 
     sudo apt-get -y install git
@@ -51,7 +51,7 @@ Install git and then clone and checkout the development branch of the mega65 rep
     cd mega65-core
     git checkout development
 
-### 2. Third Party Programs
+###2. Third Party Programs
 
 The direct dependencies of the mega65-core according to the documentation found in the [mega65 repo doc](https://github.com/MEGA65/mega65-core/blob/master/docs/build.md) are:
 
@@ -65,7 +65,7 @@ The direct dependencies of the mega65-core according to the documentation found 
 
 The next steps will guide you through the installation of the dependencies and their sub-dependencies:
 
-##### 1. fpgajtag
+#####1. fpgajtag
 
 The package libusb is required, use apt-get to install it:
 
@@ -95,15 +95,15 @@ fpgajtag should now be compilable using make in the ~/fpgajtag directory:
 
     make
 
-##### 2. gcc
+#####2. gcc
 
 Without gcc you would not have been able to install fpgajtag so it should be installed by now.
 
-##### 3. make
+#####3. make
 
 Without make you would not have been able to install fpgajtag so it should be installed by now.
 
-##### 4. cbmconvert
+#####4. cbmconvert
 
 
 This simply requires libpng which can be installed using apt-get:
@@ -117,7 +117,7 @@ Clone the contents of the cbmconvert repository to another directory (eg. mega-6
     make -f Makefile.unix
     sudo make install
 
-##### 5. Python 2.7.10
+#####5. Python 2.7.10
 
 Python can be installed from a [download](https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz) from their website or using the commands below:
 
@@ -132,7 +132,7 @@ Upon calling make on mega65, an error may occur where the installation path of p
 
     sudo apt-get install -y python-minimal
 
-##### 6. ICARUS Verilog
+#####6. ICARUS Verilog
 
 ICARUS Verilog (iverilog) requires the following packages obtainable through apt-get:
 
@@ -141,35 +141,23 @@ ICARUS Verilog (iverilog) requires the following packages obtainable through apt
     sudo apt-get install -y gperf
     sudo apt-get install -y autoconf
 
-### 3. Making MEGA65
+##### Vivado
 
-Calling make in the mega65-core directory will require the following packages to be installed:
+Xilinx Vivado SDK with a valid licence is required to compile targets from xpr files in mega65-core. The version tested was 2018.3. Either use the thin-client installer to automatically download, extract install and licence the program or:
 
-1. bison
-2. flex
-3. gperf
-4. autoconf
-2. 
-3. 
-4. 
+1. [Download](https://www.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz) the complete package tarball, extract and execute:
 
-# headers
+    sudo ./xsetup
 
-*emphasis*
+You may have to change permissions on the installer and install directory first.
 
-**strong**
+###3. Making MEGA65
 
-* list
+Calling make in the mega65-core directory will start the compilation. This may require a large allocation of memory (>4GB). Alternatively compile only the targets required eg.:
 
->block quote
+    make src/tools/monitor_load src/tools/monitor_save src/tools/mega65_ftp bin/te0725.bit
 
-    code (4 spaces indent)
-[links](https://wikipedia.org)
+Note that the simulation will run indefinitely:
 
-----
-## changelog
-* 17-Feb-2013 re-design
+    make simulate
 
-----
-## thanks
-* [markdown-js](https://github.com/evilstreak/markdown-js)

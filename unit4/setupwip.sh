@@ -75,6 +75,11 @@ echo "--------DONE Python2.7.10"
 #GNAT for GHDL
 sudo apt-get install -y gnat
 
+bison
+flex
+gperf
+autoconf
+
 #swapExtend
 sudo swapoff -a
 sudo dd if=/dev/zero of=/swapfile bs=1M count=4096

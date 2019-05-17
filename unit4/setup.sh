@@ -12,7 +12,6 @@ sudo apt-get -y install git
 git clone https://github.com/MEGA65/mega65-core.git
 cd mega65-core
 git checkout development
-cd ..
 
 echo "--------Installing mega65 direct dependencies"
 #install dependencies
@@ -74,24 +73,19 @@ echo "--------DONE Python2.7.10"
 
 #GNAT for GHDL
 sudo apt-get install -y gnat
+sudo apt-get -y install bison flex gperf autoconf
 
-bison
-flex
-gperf
-autoconf
-
-#swapExtend
-sudo swapoff -a
-sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
-sudo mkswap /swapfile
-sudo swapon /swapfile
-free -h
-sudo swapon --show
-sudo cp /etc/fstab /etc/fstab.bak
-echo '/swapfile swap default 0 0' | tee -a /etc/fstab
+echo "________DONE________"
+echo -e "________Please make sure you have the following before using mega65:________\n\n- current licenced version of Xilinx Vivado installed\n- enough memory {mem>4GB}\n"
+echo -e "________syntax: make [target] ..\ne.g.: make src/tools/monitor_save src/tools/monitor_load src/tools/mega65_ftp bin/te0725.bit"
 
 
-
-#https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
-#Full Installer for Linux (TAR/GZIP - 6.09 GB) 
-#MD5 SUM Value : e8065b2ffb411bb74ae32efa475f9817
+#swapExtendOptional
+#sudo swapoff -a
+#sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+#sudo mkswap /swapfile
+#sudo swapon /swapfile
+#free -h
+#sudo swapon --show
+#sudo cp /etc/fstab /etc/fstab.bak
+#echo '/swapfile swap default 0 0' | tee -a /etc/fstab

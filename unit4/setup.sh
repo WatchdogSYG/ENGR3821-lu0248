@@ -77,7 +77,7 @@ sudo apt-get -y install bison flex gperf autoconf
 
 echo "________DONE________"
 echo -e "________Please make sure you have the following before using mega65:________\n\n- current licenced version of Xilinx Vivado installed\n- enough memory {mem>4GB}\n"
-echo -e "________syntax: make [target] ..\ne.g.: make src/tools/monitor_save src/tools/monitor_load src/tools/mega65_ftp bin/te0725.bit"
+echo -e "syntax: make [target] ..\ne.g.: make src/tools/monitor_save src/tools/monitor_load src/tools/mega65_ftp bin/te0725.bit"
 
 
 #swapExtendOptional

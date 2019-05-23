@@ -1,0 +1,75 @@
+Incorrect answer for question 49 in 'unit3/answers.txt'
+Incorrect answer for question 60 in 'unit3/answers.txt'
+Incorrect answer for question 61 in 'unit3/answers.txt'
+Incorrect answer for question 62 in 'unit3/answers.txt'
+Incorrect answer for question 63 in 'unit3/answers.txt'
+Incorrect answer for question 64 in 'unit3/answers.txt'
+Incorrect answer for question 65 in 'unit3/answers.txt'
+Incorrect answer for question 66 in 'unit3/answers.txt'
+Incorrect answer for question 67 in 'unit3/answers.txt'
+Incorrect answer for question 68 in 'unit3/answers.txt'
+Incorrect answer for question 69 in 'unit3/answers.txt'
+Incorrect answer for question 70 in 'unit3/answers.txt'
+Incorrect answer for question 71 in 'unit3/answers.txt'
+Incorrect answer for question 72 in 'unit3/answers.txt'
+Incorrect answer for question 73 in 'unit3/answers.txt'
+Incorrect answer for question 74 in 'unit3/answers.txt'
+Incorrect answer for question 75 in 'unit3/answers.txt'
+Incorrect answer for question 76 in 'unit3/answers.txt'
+Incorrect answer for question 77 in 'unit3/answers.txt'
+Incorrect answer for question 78 in 'unit3/answers.txt'
+Incorrect answer for question 79 in 'unit3/answers.txt'
+295/400 after HASH:unit3/answers.txt:unit3/check.txt
+395/500 after SORT:unit3/iface0-solution.txt:unit3/iface0-sorted.txt:unit3/iface0-hash.txt
+495/600 after SORT:unit3/iface1-solution.txt:unit3/iface1-sorted.txt:unit3/iface1-hash.txt
+595/700 after SORT:unit3/iface2-solution.txt:unit3/iface2-sorted.txt:unit3/iface2-hash.txt
+695/800 after SORT:unit3/iface3-solution.txt:unit3/iface3-sorted.txt:unit3/iface3-hash.txt
+795/900 after SORT:unit3/iface4-solution.txt:unit3/iface4-sorted.txt:unit3/iface4-hash.txt
+No entry '80.36.18.128    0.0.0.0         255.255.255.128 ' in file 'unit3/routetable0add.log'
+No entry '96.11.11.240    0.0.0.0         255.255.255.248 ' in file 'unit3/routetable0add.log'
+No entry '13.253.0.0      0.0.0.0         255.255.128.0   ' in file 'unit3/routetable0add.log'
+No entry '125.227.58.128  0.0.0.0         255.255.255.128 ' in file 'unit3/routetable0add.log'
+No entry '126.153.123.86  10.1.1.2        255.255.255.254 ' in file 'unit3/routetable0add.log'
+No entry '15.66.176.0     10.1.1.2        255.255.240.0   ' in file 'unit3/routetable0add.log'
+6 entries in route table were wrong.
+795/925 after MATCH:+unit3/routes0.txt:unit3/routetable0add.log
+820/950 after MATCH:-unit3/routes0.txt:unit3/routetable0del.log
+No entry '56.225.106.128  10.1.1.2        255.255.255.192 ' in file 'unit3/routetable1add.log'
+No entry '117.197.162.48  10.1.1.2        255.255.255.254 ' in file 'unit3/routetable1add.log'
+No entry '115.218.48.0    0.0.0.0         255.255.252.0   ' in file 'unit3/routetable1add.log'
+No entry '65.170.194.0    10.1.1.2        255.255.255.0   ' in file 'unit3/routetable1add.log'
+No entry '16.155.60.0     10.1.1.2        255.255.255.192 ' in file 'unit3/routetable1add.log'
+No entry '111.185.66.0    10.1.1.2        255.255.255.0   ' in file 'unit3/routetable1add.log'
+6 entries in route table were wrong.
+820/975 after MATCH:+unit3/routes1.txt:unit3/routetable1add.log
+845/1000 after MATCH:-unit3/routes1.txt:unit3/routetable1del.log
+No entry '99.247.99.0     10.1.1.2        255.255.255.0   ' in file 'unit3/routetable2add.log'
+No entry '74.89.255.112   10.1.1.2        255.255.255.252 ' in file 'unit3/routetable2add.log'
+No entry '17.165.208.0    10.1.1.2        255.255.240.0   ' in file 'unit3/routetable2add.log'
+No entry '14.26.120.0     10.1.1.2        255.255.248.0   ' in file 'unit3/routetable2add.log'
+No entry '17.192.96.0     10.1.1.2        255.255.254.0   ' in file 'unit3/routetable2add.log'
+No entry '116.131.115.0   10.1.1.2        255.255.255.128 ' in file 'unit3/routetable2add.log'
+6 entries in route table were wrong.
+845/1025 after MATCH:+unit3/routes2.txt:unit3/routetable2add.log
+870/1050 after MATCH:-unit3/routes2.txt:unit3/routetable2del.log
+No entry '52.70.224.0     10.1.1.2        255.255.240.0   ' in file 'unit3/routetable3add.log'
+No entry '25.229.192.0    0.0.0.0         255.255.224.0   ' in file 'unit3/routetable3add.log'
+No entry '81.30.48.128    10.1.1.2        255.255.255.128 ' in file 'unit3/routetable3add.log'
+No entry '20.0.0.0        10.1.1.2        255.255.0.0     ' in file 'unit3/routetable3add.log'
+No entry '35.145.0.0      10.1.1.2        255.255.128.0   ' in file 'unit3/routetable3add.log'
+No entry '35.242.128.0    0.0.0.0         255.255.128.0   ' in file 'unit3/routetable3add.log'
+6 entries in route table were wrong.
+870/1075 after MATCH:+unit3/routes3.txt:unit3/routetable3add.log
+895/1100 after MATCH:-unit3/routes3.txt:unit3/routetable3del.log
+No entry '40.145.160.0    0.0.0.0         255.255.248.0   ' in file 'unit3/routetable4add.log'
+No entry '90.111.80.128   10.1.1.2        255.255.255.192 ' in file 'unit3/routetable4add.log'
+No entry '58.116.0.0      10.1.1.2        255.255.128.0   ' in file 'unit3/routetable4add.log'
+No entry '30.69.72.0      10.1.1.2        255.255.252.0   ' in file 'unit3/routetable4add.log'
+No entry '41.201.64.0     0.0.0.0         255.255.192.0   ' in file 'unit3/routetable4add.log'
+No entry '114.86.64.0     0.0.0.0         255.255.240.0   ' in file 'unit3/routetable4add.log'
+6 entries in route table were wrong.
+895/1125 after MATCH:+unit3/routes4.txt:unit3/routetable4add.log
+920/1150 after MATCH:-unit3/routes4.txt:unit3/routetable4del.log
+SUMMARY:920/1150
+TOTAL:80
+NOTE: The figures above are based on the work submitted at this point in time.  It does not take into account any late penalties. Nor does is stop you from submitting an updated version. It is simply an automatically generated summary of the raw score that your current work has obtained.

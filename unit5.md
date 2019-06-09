@@ -46,6 +46,6 @@ On the first VM:
 
     sudo iptables -A OUTPUT -p tcp --sport 22 -d 10.1.1.2 -m state --state ESTABLISHED -j ACCEPT
 
-4. Test ssh connection attempts from both machines. OUTPUT:
+4. Test ssh connection attempts from both machines. Left:10.1.1.2 Right 10.1.1.1 OUTPUT:
 
 ![alt text](https://github.com/lu0248/ENGR3821-lu0248/blob/master/unit5-part2-screenshot.png)

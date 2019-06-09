@@ -40,10 +40,12 @@ On the first VM:
 
 2. Accept incoming ssh packets from 10.1.1.2/24 that are attempting to initiate a new connection or continuing a tcp packet stream using the -m(match) flag.
 
-
     sudo iptables -A INPUT -tcp --dport ssh -s 10.1.1.2 -m state --state NEW,ESTABLISHED -j ACCEPT
-
 
 3. The only ssh packets we should be sending are to continue the existing ssh connection on default port 22.
 
-sudo iptables -A OUTPUT -p tcp --sport 22 -d 10.1.1.2 -m state --state ESTABLISHED -j ACCEPT
+    sudo iptables -A OUTPUT -p tcp --sport 22 -d 10.1.1.2 -m state --state ESTABLISHED -j ACCEPT
+
+4. Test ssh connection attempts from both machines. OUTPUT:
+
+![alt text](https://github.com/lu0248/ENGR3821-lu0248/blob/master/unit5-part2-screenshot.png)

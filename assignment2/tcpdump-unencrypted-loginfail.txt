@@ -1,0 +1,877 @@
+13:43:54.476317 IP (tos 0x0, ttl 128, id 13290, offset 0, flags [none], proto UDP (17), length 72)
+    192.168.1.115.57621 > 192.168.1.255.57621: [udp sum ok] UDP, length 44
+13:43:54.554255 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 201)
+    192.168.1.1.47853 > 255.255.255.255.7437: [udp sum ok] UDP, length 173
+13:43:54.962809 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) fe80::b2be:76ff:fe6e:a8da > ff02::1: [icmp6 sum ok] ICMP6, router advertisement, length 32
+	hop limit 64, Flags [managed, other stateful], pref medium, router lifetime 0s, reachable time 0s, retrans time 0s
+	  mtu option (5), length 8 (1):  1500
+	    0x0000:  0000 0000 05dc
+	  source link-address option (1), length 8 (1): b0:be:76:6e:a8:da
+	    0x0000:  b0be 766e a8da
+13:43:55.047545 IP (tos 0x0, ttl 128, id 12391, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [S], cksum 0x2c25 (correct), seq 1955037166, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.047607 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [S.], cksum 0x8459 (incorrect -> 0x726d), seq 4217523252, ack 1955037167, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.049453 IP (tos 0x0, ttl 128, id 12392, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0x2150 (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.049478 IP (tos 0x0, ttl 128, id 12393, offset 0, flags [DF], proto TCP (6), length 764)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [P.], cksum 0xba9f (correct), seq 1:725, ack 1, win 1024, length 724: HTTP, length: 724
+	POST /dokuwiki/doku.php?id=wiki:welcome&do=login&sectok= HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	Cache-Control: max-age=0
+	Content-Type: application/x-www-form-urlencoded
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept-Language: en-AU
+	Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+	Upgrade-Insecure-Requests: 1
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	Content-Length: 78
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+	sectok=&id=wiki%3Awelcome&do=login&u=mw3%40explosiveinvestments.com.au&p=12346[!http]
+13:43:55.049518 IP (tos 0x0, ttl 64, id 53525, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [.], cksum 0x844d (incorrect -> 0x218c), seq 1, ack 725, win 240, length 0
+13:43:55.152305 IP (tos 0x0, ttl 64, id 53526, offset 0, flags [DF], proto TCP (6), length 6437)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [P.], cksum 0x9d4a (incorrect -> 0x38b3), seq 1:6398, ack 725, win 240, length 6397: HTTP, length: 6397
+	HTTP/1.1 403 Login failed
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Vary: Cookie
+	Expires: Thu, 19 Nov 1981 08:52:00 GMT
+	Cache-Control: no-store, no-cache, must-revalidate
+	Pragma: no-cache
+	Set-Cookie: DW84669e0b736a85c6eeda0cf5b0a2b382=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/dokuwiki/; HttpOnly
+	X-UA-Compatible: IE=edge,chrome=1
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Transfer-Encoding: chunked
+	Content-Type: text/html; charset=utf-8
+	
+	16f3
+	<!DOCTYPE html>
+	<html lang="en" dir="ltr" class="no-js">
+	<head>
+	    <meta charset="utf-8" />
+	    <title>Log In [Neteng Wiki]</title>
+	    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+	    <meta name="generator" content="DokuWiki"/>
+	<meta name="theme-color" content="#008800"/>
+	<meta name="robots" content="noindex,nofollow"/>
+	<link rel="search" type="application/opensearchdescription+xml" href="/dokuwiki/lib/exe/opensearch.php" title="Neteng Wiki"/>
+	<link rel="start" href="/dokuwiki/"/>
+	<link rel="contents" href="/dokuwiki/doku.php?id=wiki:welcome&amp;do=index" title="Sitemap"/>
+	<link rel="manifest" href="/dokuwiki/lib/exe/manifest.php"/>
+	<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/dokuwiki/feed.php"/>
+	<link rel="alternate" type="application/rss+xml" title="Current namespace" href="/dokuwiki/feed.php?mode=list&amp;ns=wiki"/>
+	<link rel="alternate" type="text/html" title="Plain HTML" href="/dokuwiki/doku.php?do=export_xhtml&amp;id=wiki:welcome"/>
+	<link rel="alternate" type="text/plain" title="Wiki Markup" href="/dokuwiki/doku.php?do=export_raw&amp;id=wiki:welcome"/>
+	<link rel="stylesheet" type="text/css" href="/dokuwiki/lib/exe/css.php?t=dokuwiki&amp;tseed=fbd25246c370169481ac46a817cdc270"/>
+	<!--[if gte IE 9]><!-->
+	<script type="text/javascript">/*<![CDATA[*/var NS='wiki';var JSINFO = {"id":"wiki:welcome","namespace":"wiki","ACT":"login","useHeadingNavigation":0,"useHeadingContent":0};
+	/*!]]>*/</script>
+	<script type="text/javascript" charset="utf-8" src="/dokuwiki/lib/exe/jquery.php?tseed=23f888679b4f1dc26eef34902aca964f"></script>
+	<script type="text/javascript" charset="utf-8" src="/dokuwiki/lib/exe/js.php?t=dokuwiki&amp;tseed=fbd25246c370169481ac46a817cdc270"></script>
+	<!--<![endif]-->
+	    <meta name="viewport" content="width=device-width,initial-scale=1" />
+	    <link rel="shortcut icon" href="/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico" />
+	<link rel="apple-touch-icon" href="/dokuwiki/lib/tpl/dokuwiki/images/apple-touch-icon.png" />
+	    </head>
+	
+	<body>
+	    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_login tpl_dokuwiki     ">
+	
+	        
+	<!-- ********** HEADER ********** -->
+	<div id="dokuwiki__header"><div class="pad group">
+	
+	    
+	    <div class="headings group">
+	        <ul class="a11y skip">
+	            <li><a href="#dokuwiki__content">skip to content</a></li>
+	        </ul>
+	
+	        <h1><a href="/dokuwiki/doku.php?id=start"  accesskey="h" title="[H]"><img src="/dokuwiki/lib/tpl/dokuwiki/images/logo.png" width="64" height="64" alt="" /> <span>Neteng Wiki</span></a></h1>
+	            </div>
+	
+	    <div class="tools group">
+	        <!-- USER TOOLS -->
+	                    <div id="dokuwiki__usertools">
+	                <h3 class="a11y">User Tools</h3>
+	                <ul>
+	                    <li class="action login"><a href="/dokuwiki/doku.php?id=wiki:welcome&amp;do=login&amp;sectok=" title="Log In" rel="nofollow"><span>Log In</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 17.25V14H3v-4h7V6.75L15.25 12 10 17.25M8 2h9a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4h2v4h9V4H8v4H6V4a2 2 0 0 1 2-2z"/></svg></a></li>                </ul>
+	            </div>
+	        
+	        <!-- SITE TOOLS -->
+	        <div id="dokuwiki__sitetools">
+	            <h3 class="a11y">Site Tools</h3>
+	            <form action="/dokuwiki/doku.php?id=start" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search" /><input type="hidden" name="id" value="wiki:welcome" /><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Search" autocomplete="on" id="qsearch__in" value="" /><button value="1" type="submit" title="Search">Search</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+	                <form action="/dokuwiki/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="wiki:welcome" /><select name="do" class="edit quickselect" title="Tools"><option value="">Tools</option><optgroup label="Page Tools"><option value="">Show page</option><option value="revisions">Old revisions</option><option value="backlink">Backlinks</option></optgroup><optgroup label="Site Tools"><option value="recent">Recent Changes</option><option value="media">Media Manager</option><option value="index">Sitemap</option></optgroup><optgroup label="User Tools"><option value="login">Log In</option></optgroup></select><button type="submit">&gt;</button></div></form>            </div>
+	            <ul>
+	                <li class="action recent"><a href="/dokuwiki/doku.php?id=wiki:welcome&amp;do=recent" title="Recent Changes [r]" rel="nofollow" accesskey="r">Recent Changes</a></li><li class="action media"><a href="/dokuwiki/doku.php?id=wiki:welcome&amp;do=media&amp;ns=wiki" title="Media Manager" rel="nofollow">Media Manager</a></li><li class="action index"><a href="/dokuwiki/doku.php?id=wiki:welcome&amp;do=index" title="Sitemap [x]" rel="nofollow" accesskey="x">Sitemap</a></li>            </ul>
+	        </div>
+	
+	    </div>
+	
+	    <!-- BREADCRUMBS -->
+	            <div class="breadcrumbs">
+	                                        <div class="trace"><span class="bchead">Trace:</span></div>
+	                    </div>
+	    
+	
+	
+	    <hr class="a11y" />
+	</div></div><!-- /header -->
+	
+	        <div class="wrapper group">
+	
+	            
+	            <!-- ********** CONTENT ********** -->
+	            <div id="dokuwiki__content"><div class="pad group">
+	                <div class="error">Sorry, username or password was wrong.</div>
+	                <div class="pageId"><span>wiki:welcome</span></div>
+	
+	                <div class="page group">
+	                    
+13:43:55.152473 IP (tos 0x0, ttl 128, id 12394, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0x18c8 (correct), seq 725, ack 1461, win 1024, length 0
+13:43:55.152489 IP (tos 0x0, ttl 128, id 12395, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0x1314 (correct), seq 725, ack 2921, win 1024, length 0
+13:43:55.152493 IP (tos 0x0, ttl 128, id 12396, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0x0d60 (correct), seq 725, ack 4381, win 1024, length 0
+13:43:55.152497 IP (tos 0x0, ttl 128, id 12397, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0x07ac (correct), seq 725, ack 5841, win 1024, length 0
+13:43:55.153047 IP (tos 0x0, ttl 128, id 12398, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0x0582 (correct), seq 725, ack 6398, win 1021, length 0
+13:43:55.156120 IP (tos 0x0, ttl 128, id 12399, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [S], cksum 0x7d23 (correct), seq 151034486, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.156186 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [S.], cksum 0x8459 (incorrect -> 0x5408), seq 2398562307, ack 151034487, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.156295 IP (tos 0x0, ttl 128, id 12400, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [S], cksum 0xdfdc (correct), seq 1363406712, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.156315 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [S.], cksum 0x8459 (incorrect -> 0x836e), seq 3821864576, ack 1363406713, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.156336 IP (tos 0x0, ttl 128, id 12401, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x02eb (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.156454 IP (tos 0x0, ttl 128, id 12402, offset 0, flags [DF], proto TCP (6), length 523)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [P.], cksum 0x2042 (correct), seq 1:484, ack 1, win 1024, length 483: HTTP, length: 483
+	GET /dokuwiki/lib/exe/js.php?t=dokuwiki&tseed=fbd25246c370169481ac46a817cdc270 HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	Accept: */*
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.156484 IP (tos 0x0, ttl 64, id 46399, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [.], cksum 0x844d (incorrect -> 0x041b), seq 1, ack 484, win 237, length 0
+13:43:55.156510 IP (tos 0x0, ttl 128, id 12403, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x3251 (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.156515 IP (tos 0x0, ttl 128, id 12404, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [S], cksum 0xcf0b (correct), seq 255279701, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.156527 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [S.], cksum 0x8459 (incorrect -> 0xd048), seq 3894715517, ack 255279702, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.156550 IP (tos 0x0, ttl 128, id 12405, offset 0, flags [DF], proto TCP (6), length 539)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [P.], cksum 0xcfc5 (correct), seq 1:500, ack 1, win 1024, length 499: HTTP, length: 499
+	GET /dokuwiki/lib/exe/css.php?t=dokuwiki&tseed=fbd25246c370169481ac46a817cdc270 HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	Accept: text/css,*/*;q=0.1
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.156571 IP (tos 0x0, ttl 64, id 39866, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [.], cksum 0x844d (incorrect -> 0x3371), seq 1, ack 500, win 237, length 0
+13:43:55.156589 IP (tos 0x0, ttl 128, id 12406, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [S], cksum 0xe462 (correct), seq 3317200507, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.156601 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51702: Flags [S.], cksum 0x8459 (incorrect -> 0x2cd0), seq 3307438158, ack 3317200508, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.156770 IP (tos 0x0, ttl 128, id 12407, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x7f2b (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.156781 IP (tos 0x0, ttl 128, id 12408, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [.], cksum 0xdbb2 (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.156788 IP (tos 0x0, ttl 128, id 12409, offset 0, flags [DF], proto TCP (6), length 516)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [P.], cksum 0xa880 (correct), seq 1:477, ack 1, win 1024, length 476: HTTP, length: 476
+	GET /dokuwiki/lib/exe/jquery.php?tseed=23f888679b4f1dc26eef34902aca964f HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	Accept: */*
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.156800 IP (tos 0x0, ttl 64, id 14661, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0x844d (incorrect -> 0x8062), seq 1, ack 477, win 237, length 0
+13:43:55.156820 IP (tos 0x0, ttl 128, id 12410, offset 0, flags [DF], proto TCP (6), length 535)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [P.], cksum 0xf5ba (correct), seq 1:496, ack 1, win 1024, length 495: HTTP, length: 495
+	GET /dokuwiki/lib/tpl/dokuwiki/images/logo.png HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.156841 IP (tos 0x0, ttl 64, id 7540, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51702: Flags [.], cksum 0x844d (incorrect -> 0xdcd6), seq 1, ack 496, win 237, length 0
+13:43:55.175966 IP (tos 0x0, ttl 64, id 7541, offset 0, flags [DF], proto TCP (6), length 4070)
+    192.168.1.111.80 > 192.168.1.115.51702: Flags [P.], cksum 0x940b (incorrect -> 0x7947), seq 1:4031, ack 496, win 237, length 4030: HTTP, length: 4030
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "ea0-58af73ea8b01c"
+	Accept-Ranges: bytes
+	Content-Length: 3744
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Content-Type: image/png
+	
+13:43:55.176194 IP (tos 0x0, ttl 128, id 12411, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [.], cksum 0xd40f (correct), seq 496, ack 1461, win 1024, length 0
+13:43:55.176204 IP (tos 0x0, ttl 128, id 12412, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [.], cksum 0xce5b (correct), seq 496, ack 2921, win 1024, length 0
+13:43:55.176209 IP (tos 0x0, ttl 128, id 12413, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [.], cksum 0xca0a (correct), seq 496, ack 4031, win 1019, length 0
+13:43:55.176423 IP (tos 0x0, ttl 128, id 12414, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [F.], cksum 0xca09 (correct), seq 496, ack 4031, win 1019, length 0
+13:43:55.176433 IP (tos 0x0, ttl 128, id 12415, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51702 > 192.168.1.111.80: Flags [R.], cksum 0xce00 (correct), seq 497, ack 4031, win 0, length 0
+13:43:55.200264 IP (tos 0x0, ttl 64, id 53531, offset 0, flags [DF], proto TCP (6), length 1646)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [P.], cksum 0x8a93 (incorrect -> 0x06bf), seq 6398:8004, ack 725, win 240, length 1606: HTTP
+13:43:55.200479 IP (tos 0x0, ttl 128, id 12416, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xffca (correct), seq 725, ack 7858, win 1024, length 0
+13:43:55.200498 IP (tos 0x0, ttl 128, id 12417, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xff39 (correct), seq 725, ack 8004, win 1023, length 0
+13:43:55.224051 IP (tos 0x0, ttl 64, id 53533, offset 0, flags [DF], proto TCP (6), length 4225)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [P.], cksum 0x94a6 (incorrect -> 0xba6e), seq 8004:12189, ack 725, win 240, length 4185: HTTP
+13:43:55.224055 IP (tos 0x0, ttl 128, id 12418, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xf984 (correct), seq 725, ack 9464, win 1024, length 0
+13:43:55.224055 IP (tos 0x0, ttl 128, id 12419, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xf3d0 (correct), seq 725, ack 10924, win 1024, length 0
+13:43:55.224055 IP (tos 0x0, ttl 128, id 12420, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xeee4 (correct), seq 725, ack 12189, win 1019, length 0
+13:43:55.225935 IP (tos 0x0, ttl 128, id 12421, offset 0, flags [DF], proto TCP (6), length 541)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [P.], cksum 0x59ae (correct), seq 725:1226, ack 12189, win 1019, length 501: HTTP, length: 501
+	GET /dokuwiki/lib/images/license/button/cc-by-sa.png HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.225968 IP (tos 0x0, ttl 64, id 53536, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [.], cksum 0x844d (incorrect -> 0xefef), seq 12189, ack 1226, win 251, length 0
+13:43:55.227173 IP (tos 0x0, ttl 128, id 12422, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [S], cksum 0x5d02 (correct), seq 1139507112, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.227214 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51703: Flags [S.], cksum 0x8459 (incorrect -> 0x2b48), seq 3866417444, ack 1139507113, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.227232 IP (tos 0x0, ttl 128, id 12423, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [S], cksum 0x8a03 (correct), seq 1860839335, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+13:43:55.227252 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.111.80 > 192.168.1.115.51704: Flags [S.], cksum 0x8459 (incorrect -> 0xa1a6), seq 1198993093, ack 1860839336, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+13:43:55.227421 IP (tos 0x0, ttl 128, id 12424, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [.], cksum 0xda2a (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.227432 IP (tos 0x0, ttl 128, id 12425, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [.], cksum 0x5089 (correct), seq 1, ack 1, win 1024, length 0
+13:43:55.227438 IP (tos 0x0, ttl 128, id 12426, offset 0, flags [DF], proto TCP (6), length 544)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [P.], cksum 0x395d (correct), seq 1:505, ack 1, win 1024, length 504: HTTP, length: 504
+	GET /dokuwiki/lib/tpl/dokuwiki/images/button-donate.gif HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.227469 IP (tos 0x0, ttl 64, id 17513, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51703: Flags [.], cksum 0x844d (incorrect -> 0xdb45), seq 1, ack 505, win 237, length 0
+13:43:55.227515 IP (tos 0x0, ttl 128, id 12427, offset 0, flags [DF], proto TCP (6), length 543)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [P.], cksum 0x02ec (correct), seq 1:504, ack 1, win 1024, length 503: HTTP, length: 503
+	GET /dokuwiki/lib/tpl/dokuwiki/images/button-html5.png HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.227530 IP (tos 0x0, ttl 64, id 45962, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51704: Flags [.], cksum 0x844d (incorrect -> 0x51a5), seq 1, ack 504, win 237, length 0
+13:43:55.228648 IP (tos 0x0, ttl 64, id 17514, offset 0, flags [DF], proto TCP (6), length 511)
+    192.168.1.111.80 > 192.168.1.115.51703: Flags [P.], cksum 0x8624 (incorrect -> 0x2ecb), seq 1:472, ack 505, win 237, length 471: HTTP, length: 471
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "bb-58af73ea8b01c"
+	Accept-Ranges: bytes
+	Content-Length: 187
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Content-Type: image/gif
+	
+13:43:55.228864 IP (tos 0x0, ttl 128, id 12428, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [.], cksum 0xd65d (correct), seq 505, ack 472, win 1022, length 0
+13:43:55.229174 IP (tos 0x0, ttl 128, id 12429, offset 0, flags [DF], proto TCP (6), length 551)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [P.], cksum 0xb8e7 (correct), seq 505:1016, ack 472, win 1022, length 511: HTTP, length: 511
+	GET /dokuwiki/lib/exe/indexer.php?id=wiki%3Awelcome&1560226435 HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.231780 IP (tos 0x0, ttl 64, id 45963, offset 0, flags [DF], proto TCP (6), length 630)
+    192.168.1.111.80 > 192.168.1.115.51704: Flags [P.], cksum 0x869b (incorrect -> 0xe0c3), seq 1:591, ack 504, win 237, length 590: HTTP, length: 590
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "131-58af73ea8b01c"
+	Accept-Ranges: bytes
+	Content-Length: 305
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Content-Type: image/png
+	
+13:43:55.231936 IP (tos 0x0, ttl 128, id 12430, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [.], cksum 0x4c47 (correct), seq 504, ack 591, win 1021, length 0
+13:43:55.232049 IP (tos 0x0, ttl 128, id 12431, offset 0, flags [DF], proto TCP (6), length 541)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [P.], cksum 0x7be0 (correct), seq 504:1005, ack 591, win 1021, length 501: HTTP, length: 501
+	GET /dokuwiki/lib/tpl/dokuwiki/images/button-php.gif HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.233691 IP (tos 0x0, ttl 64, id 53537, offset 0, flags [DF], proto TCP (6), length 703)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [P.], cksum 0x86e4 (incorrect -> 0x993a), seq 12189:12852, ack 1226, win 251, length 663: HTTP, length: 663
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "17b-58af73ea7d55c"
+	Accept-Ranges: bytes
+	Content-Length: 379
+	Keep-Alive: timeout=5, max=99
+	Connection: Keep-Alive
+	Content-Type: image/png
+	
+13:43:55.233848 IP (tos 0x0, ttl 128, id 12432, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xea53 (correct), seq 1226, ack 12852, win 1024, length 0
+13:43:55.233971 IP (tos 0x0, ttl 128, id 12433, offset 0, flags [DF], proto TCP (6), length 541)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [P.], cksum 0x09ed (correct), seq 1226:1727, ack 12852, win 1024, length 501: HTTP, length: 501
+	GET /dokuwiki/lib/tpl/dokuwiki/images/button-css.png HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.234245 IP (tos 0x0, ttl 64, id 45964, offset 0, flags [DF], proto TCP (6), length 530)
+    192.168.1.111.80 > 192.168.1.115.51704: Flags [P.], cksum 0x8637 (incorrect -> 0xe791), seq 591:1081, ack 1005, win 245, length 490: HTTP, length: 490
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "cf-58af73ea8b01c"
+	Accept-Ranges: bytes
+	Content-Length: 207
+	Keep-Alive: timeout=5, max=99
+	Connection: Keep-Alive
+	Content-Type: image/gif
+	
+13:43:55.234362 IP (tos 0x0, ttl 128, id 12434, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [.], cksum 0x486a (correct), seq 1005, ack 1081, win 1019, length 0
+13:43:55.234429 IP (tos 0x0, ttl 128, id 12435, offset 0, flags [DF], proto TCP (6), length 540)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [P.], cksum 0x5c7e (correct), seq 1005:1505, ack 1081, win 1019, length 500: HTTP, length: 500
+	GET /dokuwiki/lib/tpl/dokuwiki/images/button-dw.png HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.235028 IP (tos 0x0, ttl 64, id 53538, offset 0, flags [DF], proto TCP (6), length 621)
+    192.168.1.111.80 > 192.168.1.115.51698: Flags [P.], cksum 0x8692 (incorrect -> 0x29b0), seq 12852:13433, ack 1727, win 263, length 581: HTTP, length: 581
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "129-58af73ea8b01c"
+	Accept-Ranges: bytes
+	Content-Length: 297
+	Keep-Alive: timeout=5, max=98
+	Connection: Keep-Alive
+	Content-Type: image/png
+	
+13:43:55.235275 IP (tos 0x0, ttl 128, id 12436, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51698 > 192.168.1.111.80: Flags [.], cksum 0xe61c (correct), seq 1727, ack 13433, win 1021, length 0
+13:43:55.235785 IP (tos 0x0, ttl 64, id 45965, offset 0, flags [DF], proto TCP (6), length 722)
+    192.168.1.111.80 > 192.168.1.115.51704: Flags [P.], cksum 0x86f7 (incorrect -> 0x7845), seq 1081:1763, ack 1505, win 254, length 682: HTTP, length: 682
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "18e-58af73ea8b01c"
+	Accept-Ranges: bytes
+	Content-Length: 398
+	Keep-Alive: timeout=5, max=98
+	Connection: Keep-Alive
+	Content-Type: image/png
+	
+13:43:55.235882 IP (tos 0x0, ttl 128, id 12437, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51704 > 192.168.1.111.80: Flags [.], cksum 0x43c7 (correct), seq 1505, ack 1763, win 1024, length 0
+13:43:55.238275 IP (tos 0x0, ttl 64, id 17515, offset 0, flags [DF], proto TCP (6), length 491)
+    192.168.1.111.80 > 192.168.1.115.51703: Flags [P.], cksum 0x8610 (incorrect -> 0xa76d), seq 472:923, ack 1016, win 245, length 451: HTTP, length: 451
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Vary: Cookie
+	Expires: Thu, 19 Nov 1981 08:52:00 GMT
+	Cache-Control: no-store, no-cache, must-revalidate
+	Pragma: no-cache
+	Set-Cookie: DW84669e0b736a85c6eeda0cf5b0a2b382=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/dokuwiki/; HttpOnly
+	Content-Length: 42
+	Connection: Close
+	Content-Type: image/gif
+	
+13:43:55.238436 IP (tos 0x0, ttl 128, id 12438, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [.], cksum 0xd29d (correct), seq 1016, ack 923, win 1020, length 0
+13:43:55.238448 IP (tos 0x0, ttl 128, id 12439, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [F.], cksum 0xd29c (correct), seq 1016, ack 923, win 1020, length 0
+13:43:55.260179 IP (tos 0x0, ttl 64, id 17516, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51703: Flags [F.], cksum 0x844d (incorrect -> 0xd5a2), seq 923, ack 1017, win 245, length 0
+13:43:55.260357 IP (tos 0x0, ttl 128, id 12440, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51703 > 192.168.1.111.80: Flags [.], cksum 0xd29b (correct), seq 1017, ack 924, win 1020, length 0
+13:43:55.287319 IP (tos 0x0, ttl 64, id 39867, offset 0, flags [DF], proto TCP (6), length 7340)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [.], cksum 0xa0d1 (incorrect -> 0xffef), seq 1:7301, ack 500, win 237, length 7300: HTTP, length: 7300
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Vary: Cookie,Accept-Encoding
+	Cache-Control: public, max-age=31536000
+	Pragma: public
+	Last-Modified: Mon, 10 Jun 2019 13:32:21 GMT
+	ETag: "54da3a6801728c80295cfc676b7b4931-gzip"
+	X-CacheUsed: /var/www/html/dokuwiki/data/cache/3/39720c118cf0eacea74037207c8de717.css
+	Content-Encoding: gzip
+	Content-Length: 36548
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Content-Type: text/css; charset=utf-8
+	
+13:43:55.287431 IP (tos 0x0, ttl 64, id 39872, offset 0, flags [DF], proto TCP (6), length 7340)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [.], cksum 0xa0d1 (incorrect -> 0x271f), seq 7301:14601, ack 500, win 237, length 7300: HTTP
+13:43:55.287524 IP (tos 0x0, ttl 128, id 12441, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x2aaa (correct), seq 500, ack 1461, win 1024, length 0
+13:43:55.287543 IP (tos 0x0, ttl 128, id 12442, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x24f6 (correct), seq 500, ack 2921, win 1024, length 0
+13:43:55.287556 IP (tos 0x0, ttl 64, id 39877, offset 0, flags [DF], proto TCP (6), length 5880)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [.], cksum 0x9b1d (incorrect -> 0x7e42), seq 14601:20441, ack 500, win 237, length 5840: HTTP
+13:43:55.287576 IP (tos 0x0, ttl 128, id 12443, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x1f42 (correct), seq 500, ack 4381, win 1024, length 0
+13:43:55.287585 IP (tos 0x0, ttl 128, id 12444, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x198e (correct), seq 500, ack 5841, win 1024, length 0
+13:43:55.287593 IP (tos 0x0, ttl 128, id 12445, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x13da (correct), seq 500, ack 7301, win 1024, length 0
+13:43:55.287606 IP (tos 0x0, ttl 64, id 39881, offset 0, flags [DF], proto TCP (6), length 8800)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [.], cksum 0xa685 (incorrect -> 0xc30c), seq 20441:29201, ack 500, win 237, length 8760: HTTP
+13:43:55.287624 IP (tos 0x0, ttl 128, id 12446, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x0e26 (correct), seq 500, ack 8761, win 1024, length 0
+13:43:55.287634 IP (tos 0x0, ttl 128, id 12447, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x0872 (correct), seq 500, ack 10221, win 1024, length 0
+13:43:55.287788 IP (tos 0x0, ttl 128, id 12448, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x02be (correct), seq 500, ack 11681, win 1024, length 0
+13:43:55.287804 IP (tos 0x0, ttl 64, id 39887, offset 0, flags [DF], proto TCP (6), length 7885)
+    192.168.1.111.80 > 192.168.1.115.51700: Flags [P.], cksum 0xa2f2 (incorrect -> 0x4183), seq 29201:37046, ack 500, win 237, length 7845: HTTP
+13:43:55.287821 IP (tos 0x0, ttl 128, id 12449, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xfd09 (correct), seq 500, ack 13141, win 1024, length 0
+13:43:55.287830 IP (tos 0x0, ttl 128, id 12450, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xf755 (correct), seq 500, ack 14601, win 1024, length 0
+13:43:55.287837 IP (tos 0x0, ttl 128, id 12451, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xf1a1 (correct), seq 500, ack 16061, win 1024, length 0
+13:43:55.287845 IP (tos 0x0, ttl 128, id 12452, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xebed (correct), seq 500, ack 17521, win 1024, length 0
+13:43:55.287852 IP (tos 0x0, ttl 128, id 12453, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xe639 (correct), seq 500, ack 18981, win 1024, length 0
+13:43:55.287859 IP (tos 0x0, ttl 128, id 12454, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xe085 (correct), seq 500, ack 20441, win 1024, length 0
+13:43:55.287866 IP (tos 0x0, ttl 128, id 12455, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xdad1 (correct), seq 500, ack 21901, win 1024, length 0
+13:43:55.288001 IP (tos 0x0, ttl 128, id 12456, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xd51d (correct), seq 500, ack 23361, win 1024, length 0
+13:43:55.288010 IP (tos 0x0, ttl 128, id 12457, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xcf69 (correct), seq 500, ack 24821, win 1024, length 0
+13:43:55.288017 IP (tos 0x0, ttl 128, id 12458, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xc9b5 (correct), seq 500, ack 26281, win 1024, length 0
+13:43:55.288024 IP (tos 0x0, ttl 128, id 12459, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xc401 (correct), seq 500, ack 27741, win 1024, length 0
+13:43:55.288032 IP (tos 0x0, ttl 128, id 12460, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xbe4d (correct), seq 500, ack 29201, win 1024, length 0
+13:43:55.288039 IP (tos 0x0, ttl 128, id 12461, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xb899 (correct), seq 500, ack 30661, win 1024, length 0
+13:43:55.288164 IP (tos 0x0, ttl 128, id 12462, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xb2e5 (correct), seq 500, ack 32121, win 1024, length 0
+13:43:55.288173 IP (tos 0x0, ttl 128, id 12463, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xad31 (correct), seq 500, ack 33581, win 1024, length 0
+13:43:55.288180 IP (tos 0x0, ttl 128, id 12464, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xa77d (correct), seq 500, ack 35041, win 1024, length 0
+13:43:55.288189 IP (tos 0x0, ttl 128, id 12465, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0xa1c9 (correct), seq 500, ack 36501, win 1024, length 0
+13:43:55.288196 IP (tos 0x0, ttl 128, id 12466, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51700 > 192.168.1.111.80: Flags [.], cksum 0x9fab (correct), seq 500, ack 37046, win 1021, length 0
+13:43:55.294687 IP (tos 0x0, ttl 64, id 46400, offset 0, flags [DF], proto TCP (6), length 7340)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [.], cksum 0xa0d1 (incorrect -> 0x11ea), seq 1:7301, ack 484, win 237, length 7300: HTTP, length: 7300
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Vary: Cookie,Accept-Encoding
+	Cache-Control: public, max-age=31536000
+	Pragma: public
+	Last-Modified: Mon, 10 Jun 2019 13:32:21 GMT
+	ETag: "54da3a6801728c80295cfc676b7b4931-gzip"
+	X-CacheUsed: /var/www/html/dokuwiki/data/cache/f/f0a6e158d8ab73df8b2d82f6c70ea322.js
+	Content-Encoding: gzip
+	Content-Length: 34833
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Content-Type: application/javascript; charset=utf-8
+	
+13:43:55.294798 IP (tos 0x0, ttl 64, id 46405, offset 0, flags [DF], proto TCP (6), length 7340)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [.], cksum 0xa0d1 (incorrect -> 0x936d), seq 7301:14601, ack 484, win 237, length 7300: HTTP
+13:43:55.294885 IP (tos 0x0, ttl 128, id 12467, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xfb53 (correct), seq 484, ack 1461, win 1024, length 0
+13:43:55.294903 IP (tos 0x0, ttl 128, id 12468, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xf59f (correct), seq 484, ack 2921, win 1024, length 0
+13:43:55.294917 IP (tos 0x0, ttl 64, id 46410, offset 0, flags [DF], proto TCP (6), length 5880)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [.], cksum 0x9b1d (incorrect -> 0x7f20), seq 14601:20441, ack 484, win 237, length 5840: HTTP
+13:43:55.294938 IP (tos 0x0, ttl 128, id 12469, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xefeb (correct), seq 484, ack 4381, win 1024, length 0
+13:43:55.294947 IP (tos 0x0, ttl 128, id 12470, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xea37 (correct), seq 484, ack 5841, win 1024, length 0
+13:43:55.294955 IP (tos 0x0, ttl 128, id 12471, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xe483 (correct), seq 484, ack 7301, win 1024, length 0
+13:43:55.294968 IP (tos 0x0, ttl 64, id 46414, offset 0, flags [DF], proto TCP (6), length 8800)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [.], cksum 0xa685 (incorrect -> 0x3f74), seq 20441:29201, ack 484, win 237, length 8760: HTTP
+13:43:55.294986 IP (tos 0x0, ttl 128, id 12472, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xdecf (correct), seq 484, ack 8761, win 1024, length 0
+13:43:55.294996 IP (tos 0x0, ttl 128, id 12473, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xd91b (correct), seq 484, ack 10221, win 1024, length 0
+13:43:55.295110 IP (tos 0x0, ttl 128, id 12474, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xd367 (correct), seq 484, ack 11681, win 1024, length 0
+13:43:55.295120 IP (tos 0x0, ttl 128, id 12475, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xcdb3 (correct), seq 484, ack 13141, win 1024, length 0
+13:43:55.295128 IP (tos 0x0, ttl 128, id 12476, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xc7ff (correct), seq 484, ack 14601, win 1024, length 0
+13:43:55.295140 IP (tos 0x0, ttl 64, id 46420, offset 0, flags [DF], proto TCP (6), length 6183)
+    192.168.1.111.80 > 192.168.1.115.51699: Flags [P.], cksum 0x9c4c (incorrect -> 0x3eaf), seq 29201:35344, ack 484, win 237, length 6143: HTTP
+13:43:55.295157 IP (tos 0x0, ttl 128, id 12477, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xc24b (correct), seq 484, ack 16061, win 1024, length 0
+13:43:55.295167 IP (tos 0x0, ttl 128, id 12478, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xbc97 (correct), seq 484, ack 17521, win 1024, length 0
+13:43:55.295174 IP (tos 0x0, ttl 128, id 12479, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xb6e3 (correct), seq 484, ack 18981, win 1024, length 0
+13:43:55.295296 IP (tos 0x0, ttl 128, id 12480, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xb12f (correct), seq 484, ack 20441, win 1024, length 0
+13:43:55.295306 IP (tos 0x0, ttl 128, id 12481, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xab7b (correct), seq 484, ack 21901, win 1024, length 0
+13:43:55.295314 IP (tos 0x0, ttl 128, id 12482, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xa5c7 (correct), seq 484, ack 23361, win 1024, length 0
+13:43:55.295321 IP (tos 0x0, ttl 128, id 12483, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0xa013 (correct), seq 484, ack 24821, win 1024, length 0
+13:43:55.295328 IP (tos 0x0, ttl 128, id 12484, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x9a5f (correct), seq 484, ack 26281, win 1024, length 0
+13:43:55.295492 IP (tos 0x0, ttl 128, id 12485, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x94ab (correct), seq 484, ack 27741, win 1024, length 0
+13:43:55.295507 IP (tos 0x0, ttl 128, id 12486, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x8ef7 (correct), seq 484, ack 29201, win 1024, length 0
+13:43:55.295514 IP (tos 0x0, ttl 128, id 12487, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x8943 (correct), seq 484, ack 30661, win 1024, length 0
+13:43:55.295520 IP (tos 0x0, ttl 128, id 12488, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x838f (correct), seq 484, ack 32121, win 1024, length 0
+13:43:55.295524 IP (tos 0x0, ttl 128, id 12489, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x7ddb (correct), seq 484, ack 33581, win 1024, length 0
+13:43:55.295529 IP (tos 0x0, ttl 128, id 12490, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x7827 (correct), seq 484, ack 35041, win 1024, length 0
+13:43:55.295533 IP (tos 0x0, ttl 128, id 12491, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51699 > 192.168.1.111.80: Flags [.], cksum 0x76fa (correct), seq 484, ack 35344, win 1022, length 0
+13:43:55.310597 IP (tos 0x0, ttl 64, id 14662, offset 0, flags [DF], proto TCP (6), length 7340)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0xa0d1 (incorrect -> 0x3fd2), seq 1:7301, ack 477, win 237, length 7300: HTTP, length: 7300
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Vary: Cookie,Accept-Encoding
+	Cache-Control: public, max-age=31536000
+	Pragma: public
+	Last-Modified: Mon, 10 Jun 2019 12:25:58 GMT
+	ETag: "0f99d9e09f80211291ae00031f3b622b-gzip"
+	X-CacheUsed: /var/www/html/dokuwiki/data/cache/d/d223e1439188e478349d52476506c22e.js
+	Content-Encoding: gzip
+	Keep-Alive: timeout=5, max=100
+	Connection: Keep-Alive
+	Transfer-Encoding: chunked
+	Content-Type: application/javascript; charset=utf-8
+	
+	1faa
+13:43:55.310712 IP (tos 0x0, ttl 64, id 14667, offset 0, flags [DF], proto TCP (6), length 1369)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0x897e (incorrect -> 0x750a), seq 7301:8630, ack 477, win 237, length 1329: HTTP
+13:43:55.310818 IP (tos 0x0, ttl 128, id 12492, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x779b (correct), seq 477, ack 1461, win 1024, length 0
+13:43:55.310831 IP (tos 0x0, ttl 128, id 12493, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x71e7 (correct), seq 477, ack 2921, win 1024, length 0
+13:43:55.310836 IP (tos 0x0, ttl 128, id 12494, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x6c33 (correct), seq 477, ack 4381, win 1024, length 0
+13:43:55.310960 IP (tos 0x0, ttl 128, id 12495, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x667f (correct), seq 477, ack 5841, win 1024, length 0
+13:43:55.310970 IP (tos 0x0, ttl 128, id 12496, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x60cb (correct), seq 477, ack 7301, win 1024, length 0
+13:43:55.310977 IP (tos 0x0, ttl 128, id 12497, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x5ba0 (correct), seq 477, ack 8630, win 1018, length 0
+13:43:55.311025 IP (tos 0x0, ttl 64, id 14668, offset 0, flags [DF], proto TCP (6), length 5880)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0x9b1d (incorrect -> 0x1107), seq 8630:14470, ack 477, win 237, length 5840: HTTP
+13:43:55.311092 IP (tos 0x0, ttl 128, id 12498, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x55e6 (correct), seq 477, ack 10090, win 1024, length 0
+13:43:55.311214 IP (tos 0x0, ttl 128, id 12499, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x5032 (correct), seq 477, ack 11550, win 1024, length 0
+13:43:55.311220 IP (tos 0x0, ttl 128, id 12500, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x4a7e (correct), seq 477, ack 13010, win 1024, length 0
+13:43:55.311223 IP (tos 0x0, ttl 128, id 12501, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x44ca (correct), seq 477, ack 14470, win 1024, length 0
+13:43:55.311265 IP (tos 0x0, ttl 64, id 14672, offset 0, flags [DF], proto TCP (6), length 2304)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0x8d25 (incorrect -> 0xfd8c), seq 14470:16734, ack 477, win 237, length 2264: HTTP
+13:43:55.311328 IP (tos 0x0, ttl 128, id 12502, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x3f16 (correct), seq 477, ack 15930, win 1024, length 0
+13:43:55.311413 IP (tos 0x0, ttl 64, id 14674, offset 0, flags [DF], proto TCP (6), length 8144)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0xa3f5 (incorrect -> 0x210e), seq 16734:24838, ack 477, win 237, length 8104: HTTP
+13:43:55.311498 IP (tos 0x0, ttl 128, id 12503, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x3bf6 (correct), seq 477, ack 16734, win 1020, length 0
+13:43:55.311504 IP (tos 0x0, ttl 128, id 12504, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x363e (correct), seq 477, ack 18194, win 1024, length 0
+13:43:55.311508 IP (tos 0x0, ttl 128, id 12505, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x308a (correct), seq 477, ack 19654, win 1024, length 0
+13:43:55.311630 IP (tos 0x0, ttl 128, id 12506, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x2ad6 (correct), seq 477, ack 21114, win 1024, length 0
+13:43:55.311639 IP (tos 0x0, ttl 128, id 12507, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x2522 (correct), seq 477, ack 22574, win 1024, length 0
+13:43:55.311643 IP (tos 0x0, ttl 128, id 12508, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x1f6e (correct), seq 477, ack 24034, win 1024, length 0
+13:43:55.311648 IP (tos 0x0, ttl 128, id 12509, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x1c4e (correct), seq 477, ack 24838, win 1020, length 0
+13:43:55.311708 IP (tos 0x0, ttl 64, id 14680, offset 0, flags [DF], proto TCP (6), length 8144)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0xa3f5 (incorrect -> 0x49a4), seq 24838:32942, ack 477, win 237, length 8104: HTTP
+13:43:55.311783 IP (tos 0x0, ttl 128, id 12510, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x1696 (correct), seq 477, ack 26298, win 1024, length 0
+13:43:55.311790 IP (tos 0x0, ttl 128, id 12511, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x10e2 (correct), seq 477, ack 27758, win 1024, length 0
+13:43:55.311796 IP (tos 0x0, ttl 128, id 12512, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x0b2e (correct), seq 477, ack 29218, win 1024, length 0
+13:43:55.311801 IP (tos 0x0, ttl 128, id 12513, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x057a (correct), seq 477, ack 30678, win 1024, length 0
+13:43:55.311883 IP (tos 0x0, ttl 64, id 14686, offset 0, flags [DF], proto TCP (6), length 8144)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0xa3f5 (incorrect -> 0x43df), seq 32942:41046, ack 477, win 237, length 8104: HTTP
+13:43:55.311962 IP (tos 0x0, ttl 128, id 12514, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xffc5 (correct), seq 477, ack 32138, win 1024, length 0
+13:43:55.311970 IP (tos 0x0, ttl 128, id 12515, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xfca5 (correct), seq 477, ack 32942, win 1020, length 0
+13:43:55.311977 IP (tos 0x0, ttl 128, id 12516, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xf6ed (correct), seq 477, ack 34402, win 1024, length 0
+13:43:55.311982 IP (tos 0x0, ttl 128, id 12517, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xf139 (correct), seq 477, ack 35862, win 1024, length 0
+13:43:55.311989 IP (tos 0x0, ttl 128, id 12518, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xeb85 (correct), seq 477, ack 37322, win 1024, length 0
+13:43:55.311995 IP (tos 0x0, ttl 128, id 12519, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xe5d1 (correct), seq 477, ack 38782, win 1024, length 0
+13:43:55.312074 IP (tos 0x0, ttl 128, id 12520, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xe01d (correct), seq 477, ack 40242, win 1024, length 0
+13:43:55.312079 IP (tos 0x0, ttl 128, id 12521, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xdcfd (correct), seq 477, ack 41046, win 1020, length 0
+13:43:55.312140 IP (tos 0x0, ttl 64, id 14692, offset 0, flags [DF], proto TCP (6), length 8144)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0xa3f5 (incorrect -> 0x13a8), seq 41046:49150, ack 477, win 237, length 8104: HTTP
+13:43:55.312205 IP (tos 0x0, ttl 128, id 12522, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xd745 (correct), seq 477, ack 42506, win 1024, length 0
+13:43:55.312313 IP (tos 0x0, ttl 128, id 12523, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xd191 (correct), seq 477, ack 43966, win 1024, length 0
+13:43:55.312321 IP (tos 0x0, ttl 128, id 12524, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xcbdd (correct), seq 477, ack 45426, win 1024, length 0
+13:43:55.312327 IP (tos 0x0, ttl 128, id 12525, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xc629 (correct), seq 477, ack 46886, win 1024, length 0
+13:43:55.312334 IP (tos 0x0, ttl 128, id 12526, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xc075 (correct), seq 477, ack 48346, win 1024, length 0
+13:43:55.312337 IP (tos 0x0, ttl 128, id 12527, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xbd55 (correct), seq 477, ack 49150, win 1020, length 0
+13:43:55.365662 IP (tos 0x0, ttl 64, id 14698, offset 0, flags [DF], proto TCP (6), length 14640)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0xbd55 (incorrect -> 0x1f33), seq 49150:63750, ack 477, win 237, length 14600: HTTP
+13:43:55.365781 IP (tos 0x0, ttl 64, id 14708, offset 0, flags [DF], proto TCP (6), length 14640)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0xbd55 (incorrect -> 0xf3f6), seq 63750:78350, ack 477, win 237, length 14600: HTTP
+13:43:55.365875 IP (tos 0x0, ttl 128, id 12528, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xb79d (correct), seq 477, ack 50610, win 1024, length 0
+13:43:55.365896 IP (tos 0x0, ttl 128, id 12529, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xb1e9 (correct), seq 477, ack 52070, win 1024, length 0
+13:43:55.365905 IP (tos 0x0, ttl 128, id 12530, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xac35 (correct), seq 477, ack 53530, win 1024, length 0
+13:43:55.365914 IP (tos 0x0, ttl 128, id 12531, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xa681 (correct), seq 477, ack 54990, win 1024, length 0
+13:43:55.365922 IP (tos 0x0, ttl 128, id 12532, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xa0cd (correct), seq 477, ack 56450, win 1024, length 0
+13:43:55.366056 IP (tos 0x0, ttl 128, id 12533, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x9b19 (correct), seq 477, ack 57910, win 1024, length 0
+13:43:55.366068 IP (tos 0x0, ttl 128, id 12534, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x9565 (correct), seq 477, ack 59370, win 1024, length 0
+13:43:55.366083 IP (tos 0x0, ttl 64, id 14718, offset 0, flags [DF], proto TCP (6), length 10260)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0xac39 (incorrect -> 0x1578), seq 78350:88570, ack 477, win 237, length 10220: HTTP
+13:43:55.366102 IP (tos 0x0, ttl 128, id 12535, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x8fb1 (correct), seq 477, ack 60830, win 1024, length 0
+13:43:55.366112 IP (tos 0x0, ttl 128, id 12536, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x89fd (correct), seq 477, ack 62290, win 1024, length 0
+13:43:55.366120 IP (tos 0x0, ttl 128, id 12537, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x8449 (correct), seq 477, ack 63750, win 1024, length 0
+13:43:55.366129 IP (tos 0x0, ttl 128, id 12538, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x7e95 (correct), seq 477, ack 65210, win 1024, length 0
+13:43:55.366158 IP (tos 0x0, ttl 128, id 12539, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x78e1 (correct), seq 477, ack 66670, win 1024, length 0
+13:43:55.366167 IP (tos 0x0, ttl 128, id 12540, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x732d (correct), seq 477, ack 68130, win 1024, length 0
+13:43:55.366175 IP (tos 0x0, ttl 128, id 12541, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x6d79 (correct), seq 477, ack 69590, win 1024, length 0
+13:43:55.366296 IP (tos 0x0, ttl 128, id 12542, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x67c5 (correct), seq 477, ack 71050, win 1024, length 0
+13:43:55.366307 IP (tos 0x0, ttl 128, id 12543, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x6211 (correct), seq 477, ack 72510, win 1024, length 0
+13:43:55.366315 IP (tos 0x0, ttl 128, id 12544, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x5c5d (correct), seq 477, ack 73970, win 1024, length 0
+13:43:55.366323 IP (tos 0x0, ttl 128, id 12545, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x56a9 (correct), seq 477, ack 75430, win 1024, length 0
+13:43:55.366331 IP (tos 0x0, ttl 128, id 12546, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x50f5 (correct), seq 477, ack 76890, win 1024, length 0
+13:43:55.366339 IP (tos 0x0, ttl 128, id 12547, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x4b41 (correct), seq 477, ack 78350, win 1024, length 0
+13:43:55.366540 IP (tos 0x0, ttl 128, id 12548, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x458d (correct), seq 477, ack 79810, win 1024, length 0
+13:43:55.366551 IP (tos 0x0, ttl 128, id 12549, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x3fd9 (correct), seq 477, ack 81270, win 1024, length 0
+13:43:55.366559 IP (tos 0x0, ttl 128, id 12550, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x3a25 (correct), seq 477, ack 82730, win 1024, length 0
+13:43:55.366566 IP (tos 0x0, ttl 128, id 12551, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x3471 (correct), seq 477, ack 84190, win 1024, length 0
+13:43:55.366573 IP (tos 0x0, ttl 128, id 12552, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x2ebd (correct), seq 477, ack 85650, win 1024, length 0
+13:43:55.366581 IP (tos 0x0, ttl 128, id 12553, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x2909 (correct), seq 477, ack 87110, win 1024, length 0
+13:43:55.366672 IP (tos 0x0, ttl 64, id 14725, offset 0, flags [DF], proto TCP (6), length 10260)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0xac39 (incorrect -> 0xeacf), seq 88570:98790, ack 477, win 237, length 10220: HTTP
+13:43:55.366759 IP (tos 0x0, ttl 128, id 12554, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x2355 (correct), seq 477, ack 88570, win 1024, length 0
+13:43:55.366770 IP (tos 0x0, ttl 128, id 12555, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x1da1 (correct), seq 477, ack 90030, win 1024, length 0
+13:43:55.366776 IP (tos 0x0, ttl 128, id 12556, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x17ed (correct), seq 477, ack 91490, win 1024, length 0
+13:43:55.366782 IP (tos 0x0, ttl 128, id 12557, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x1239 (correct), seq 477, ack 92950, win 1024, length 0
+13:43:55.366788 IP (tos 0x0, ttl 128, id 12558, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x0c85 (correct), seq 477, ack 94410, win 1024, length 0
+13:43:55.366795 IP (tos 0x0, ttl 128, id 12559, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x06d1 (correct), seq 477, ack 95870, win 1024, length 0
+13:43:55.366841 IP (tos 0x0, ttl 64, id 14732, offset 0, flags [DF], proto TCP (6), length 1889)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0x8b86 (incorrect -> 0x798f), seq 98790:100639, ack 477, win 237, length 1849: HTTP
+13:43:55.366918 IP (tos 0x0, ttl 128, id 12560, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0x011d (correct), seq 477, ack 97330, win 1024, length 0
+13:43:55.366927 IP (tos 0x0, ttl 128, id 12561, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xfb68 (correct), seq 477, ack 98790, win 1024, length 0
+13:43:55.366933 IP (tos 0x0, ttl 128, id 12562, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xf5b4 (correct), seq 477, ack 100250, win 1024, length 0
+13:43:55.366939 IP (tos 0x0, ttl 128, id 12563, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xf431 (correct), seq 477, ack 100639, win 1022, length 0
+13:43:55.478442 IP (tos 0x0, ttl 128, id 12564, offset 0, flags [DF], proto TCP (6), length 523)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [P.], cksum 0xc430 (correct), seq 477:960, ack 100639, win 1022, length 483: HTTP, length: 483
+	GET /dokuwiki/lib/images/error.png HTTP/1.1
+	Referer: http://192.168.1.111/dokuwiki/doku.php?id=wiki:welcome&do=login&sectok=
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+	Accept: image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+	Accept-Language: en-AU
+	Accept-Encoding: gzip, deflate
+	Host: 192.168.1.111
+	DNT: 1
+	Connection: Keep-Alive
+	Cookie: DokuWiki=a651qu26me4v1s6v3thdoiuh7s
+	
+13:43:55.478484 IP (tos 0x0, ttl 64, id 14734, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [.], cksum 0x844d (incorrect -> 0xf557), seq 100639, ack 960, win 245, length 0
+13:43:55.479269 IP (tos 0x0, ttl 64, id 14735, offset 0, flags [DF], proto TCP (6), length 961)
+    192.168.1.111.80 > 192.168.1.115.51701: Flags [P.], cksum 0x87e6 (incorrect -> 0x7f37), seq 100639:101560, ack 960, win 245, length 921: HTTP, length: 921
+	HTTP/1.1 200 OK
+	Date: Tue, 11 Jun 2019 04:13:55 GMT
+	Server: Apache/2.4.29 (Ubuntu)
+	Last-Modified: Mon, 10 Jun 2019 12:23:16 GMT
+	ETag: "27d-58af73ea7873c"
+	Accept-Ranges: bytes
+	Content-Length: 637
+	Keep-Alive: timeout=5, max=99
+	Connection: Keep-Alive
+	Content-Type: image/png
+	
+13:43:55.479397 IP (tos 0x0, ttl 128, id 12565, offset 0, flags [DF], proto TCP (6), length 40)
+    192.168.1.115.51701 > 192.168.1.111.80: Flags [.], cksum 0xeeb9 (correct), seq 960, ack 101560, win 1018, length 0
+13:43:56.551795 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.1.115 (ec:08:6b:c3:59:f4) tell 192.168.1.1, length 46
+13:43:56.594377 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.1.111 (ec:08:6b:c3:59:f4) tell 192.168.1.1, length 46
+13:43:56.594408 ARP, Ethernet (len 6), IPv4 (len 4), Reply 192.168.1.111 is-at 08:00:27:53:84:de, length 28
+13:43:56.601339 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 78)
+    192.168.1.1.60073 > 192.168.1.111.137: [udp sum ok] 
+>>> NBT UDP PACKET(137): QUERY; REQUEST; UNICAST
+TrnID=0x3E8
+OpCode=0
+NmFlags=0x0
+Rcode=0
+QueryCount=1
+AnswerCount=0
+AuthorityCount=0
+AddressRecCount=0
+QuestionRecords:
+Name=*               NameType=0x00 (Workstation)
+QuestionType=0x21
+QuestionClass=0x1
+
+

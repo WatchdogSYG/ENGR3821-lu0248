@@ -1,11 +1,12 @@
 #! /bin/bash
 #Author: <REDACTED FOR MARKING PURPOSES> 
-#REVISION 0 - 23-06-18 01:31
+#REVISION 0 - 19-06-18 18:36
 #TODO ------------------------------------------------------------------------------------------------------------------------#
 #BUG: if a defence instance is larger than an attack instance, the defender will heal.
 #ABSTRACTION: move npc death checking in combat to another "class" thing instead of in every loop
 #PROOFREADING: rooftop guard descriptions may use plural versions of words. There were supposesd to be 2 guards but i took one out after implementing some descriptive flavour text .There may be instances of plural words where there shouldnt be.
 #BUG: workaround applied. When transitioning between cover, you will still get an echo after you die.
+#LIMITATION: every non-directional command must have a unique name and therefore a unique user input. This can be avoided by implementing the capability to use an associative array value as a function pointer. However, if the function does not exist, we have to catch the error.
 #sources ---------------------------------------------------------------------------------------------------------------------#
 #-----------------------------------------------------------------------------------------------------------------------------#
 #ascii borders: https://www.asciiart.eu/art-and-design/borders
@@ -60,13 +61,12 @@ STATS[RIGHT]=Nothing
 #for that key to handle the terminal throwing a command not found error. The kv can be used to store state if desired. A kv can intentionally not conform to the [a-z] syntax to avoid user interaction.
 
 
-#EVERY ROOM MUST IMPLEMENT ARRAY KV PAIRS:
+#EVERY ROOM MUST IMPLEMENT ARRAY KV PAIRS (for consistency):
 #location
 #look
 
 #For consistency, implement all text entries for every direction.
 
-#LIMITATION: every non-directional command must have a unique name and therefore a unique user input. This can be avoided by implementing the capability to use an associative array value as a function pointer. However, if the function does not exist, we have to catch the error.
 
 declare -A ROOM_ORIGIN
 ROOM_ORIGIN[location]="Fiery Room"
@@ -209,7 +209,7 @@ function ROOM_DOWN1_northF(){
     if [ ${DOWN1_TERMINAL[stairwelllock]} == 0 ]; then
         #the guard is alerted if you turn the lights from on to off
         currentRoom=ROOM_ROOF_STAIRWELL
-        echo -e "You ascend the stairs to the roof and see a ${NPC}guard${ERASE} armed with a stun baton and a rifle who flank a VTOL aircraft on the other side of the rooftop. There is no helipad."
+        echo -e "You ascend the stairs to the roof and see a ${NPC}guard${ERASE} armed with a stun baton and a rifle who flanks a VTOL aircraft on the other side of the rooftop. There is no helipad."
         #unlocked stealthed
         if [ ${ROOF_STATE[_stealth]} == 1 ]; then
            ROOM_ROOF_STAIRWELL[look]="The ${NPC}guard${ERASE} doesn't notice you but seems alert.\nYou overhear him speaking into his comm-device:\n\n\"No sign of the body, he's still in the building somewhere.\"\n\nYou take cover behind the stairwell exit you just emerged from. There is an AC unit to the ${ROOM}west${ERASE} that might provide you with cover."
@@ -241,7 +241,7 @@ DOWN1_TERMINAL[stairwelllock]=1 #the actual lock bool 1:locked, 0unlocked
 DOWN1_TERMINAL[sudostairwelllock]=0
 DOWN1_TERMINAL["maintenanceschedule.txt"]=0
 function maintenanceschedule.txt(){
-    echo -e "${TERM}Bob:     0100\nSteve:   0500\nSarah:   0900\nTiffany: 1300${ERASE}"
+    echo -e "\n${TERM}Bob:     0100\nSteve:   0500\nSarah:   0900\nTiffany: 1300${ERASE}\n"
 }
 function exit() {
     currentRoom=ROOM_DOWN1
@@ -270,7 +270,7 @@ function rooflightsoff(){
     ROOM_ROOF_STAIRWELL[lights]=0
 }
 function rooflightsstatus(){
-    if [ ${ROOF_STATE[lights]} == "on" ]; then
+    if [ ${ROOM_ROOF_AC[lights]} == 1 ]; then
                 echo -e "${TERM}The lights are on.${ERASE}"
             else
                 echo -e "${TERM}The lights are off.${ERASE}"
@@ -302,7 +302,8 @@ ROOF_STATE[_hitChance]=75 #chance the guards hit you when transitioning cover
 ROOF_STATE[_stealthBreakChance]=80 #chance you break stealth when you transition between cover
 
 #this multiroom (AC+STAIRWELL) shall have shared member variables in the AC object
-#this "room" is a bit different, it is a combat scene. All directional movement can also be actions like "engage" which will change the room to dissallow some room-member commands. This room will have different state (stealth|lights) depending on which path you take.
+#state that affects the guard's behaviour: lights on will increase chance of breaking stealth and increase the guard's hit accuracy as you transition cover. Lights off will initially alert the guard of your presence but accuracy remains low.
+#stealth can be broken on transition of cover or by turning the lights off initially.
 declare -A ROOM_ROOF_AC
 ROOM_ROOF_AC[location]="Rooftop: In Cover (AC Unit)"
 ROOM_ROOF_AC[look]="" #set when coming in from corridor or stairwell.
@@ -418,7 +419,7 @@ function attack(){
 
     #check for guard death
     if [[ ${ROOF_STATE[_g1Health]} -le 0 ]]; then
-        echo -e "The ${NPC}guard${ERASE} collapses as you overpower him. You stumble towards the VTOL aircraft and check if there are any personnel still around. The craft is empty, you slouch into the cockpit chair and close the doors behind you. As you lift off, the landing gear disengages and the AI facial recognition springs to life.\n\n${LPURPLE}Ship systems online. Scanning identity...\nWelcome, ${YOU}Arnold Schwarzenegger${ERASE}." #I know this is supposed to be your name but Arnold was funnier.
+        echo -e "\n\n\n\n\nThe ${NPC}guard${ERASE} collapses as you overpower him. You stumble towards the VTOL aircraft and check if there are any personnel still around.\nThe craft is empty, you slouch into the cockpit chair and close the doors behind you. As you lift off, the landing gear disengages and the AI facial recognition springs to life.\n\n${LPURPLE}Ship systems online. Scanning identity...\nWelcome, ${YOU}Arnold Schwarzenegger${ERASE}." #I know this is supposed to be your name but Arnold was funnier.
         currentRoom=ROOM_DEMO_FIN
         updateRoom
     fi;
@@ -550,7 +551,7 @@ function actionHandler(){
         echo -e "exit ........... Stop interacting with objects such as ${INT}book${ERASE}s and computer ${INT}terminal${ERASE}s.\n\n"
         echo -e "Combat:\n\nNPCs in combat will randomly attack or defend. You can use the commands ${CLI}attack${ERASE} or ${CLI}defend${ERASE}.\n"
         echo -e "If both parties attack on the same turn, both parties will take full damage based on each other's ATK stat."
-        echo -e "If you attack when the enemy defends, you will take no damage and the enemy will take reduced damage based on your ATK and their DEF stat and vice-versa."
+        echo -e "If you attack when the enemy defends, you will take no damage and the enemy will take reduced damage based on your ATK and their DEF stat and vice-versa.\n"
         ;;
     quit)
         echo "Are you sure you want to quit the game and lose your progress?"
@@ -599,6 +600,7 @@ actionHandler location
 echo -e "--------------------------------------------------------\n"
 actionHandler look
 
+#main loop
 until [ $QUIT -gt 0 ]; do
 
 read action 

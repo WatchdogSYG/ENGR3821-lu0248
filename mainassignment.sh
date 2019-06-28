@@ -1,5 +1,11 @@
 #! /bin/bash
 #Author: <REDACTED FOR MARKING PURPOSES> 
+
+
+#   I, THE AUTHOR, GIVE CONSENT FOR ENGR3821 TOPIC STAFF TO DISTIBUTE THIS FILE FOR PEER MARKING AND ASSESSMENT PURPOSES.
+#
+
+
 #REVISION 0 - 19-06-18 18:36
 #TODO ------------------------------------------------------------------------------------------------------------------------#
 #BUG: if a defence instance is larger than an attack instance, the defender will heal.
